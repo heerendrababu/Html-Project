@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+num1: <input type=" text" id="tbnum1">
+<br>
+num2:<input type="text" id="tbnum2">
+<br>
+num3:<input type="text" id="tbnum3">
+<br>
+operations:<select id="select">
+    <option> select operations</option>
+    <option> Add    </option>
+    <option> sub   </option>
+    <option> mul    </option>
+    <option> div    </option>
+</select>
+<input type ="submit" value="getresult" onclick="f()">
+Result: <input type="result" id="tbresult">
+<br>
+    
+</body>
+<script>
+    function f()
+    {
+        n1=document.getElementById("tbnum1");
+        x=n1.value;
+        xy=parseInt(x);
+        n2=document.getElementById("tbnum2");
+        y=n2.value;
+        yz=parseInt(y);
+        n3=document.getElementById("tbnum3");
+        z=n3.value;
+        zx=parseInt(z);
+        n4=document.getElementById("select");
+        i=n4.value;
+        n5=document.getElementById("tbresult");
+        if(i=='Add')
+        {
+            n5.value=xy+yz+zx;
+        }
+        else if(i=='sub')
+        {
+            n5.value=xy-yz-zx;
+        }
+        else if(i=='mul')
+        {
+            n5.value==xy*yz*zx;
+        }
+        else if(i=='div')
+        {
+            n5.value=xy/yz/zx;
+        }
+    }
+</script>
+
+</html>
